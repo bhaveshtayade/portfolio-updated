@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavesh Tayade - Full Stack Developer & Computer Engineering Student</title>
+    <meta name="description" content="Bhavesh Tayade - Computer Engineering student and MERN Stack Developer with expertise in React.js, Node.js, and Java development. Currently interning at Humming Byte Pvt Ltd.">
+    <meta name="keywords" content="Bhavesh Tayade, Full Stack Developer, MERN Stack, React.js, Node.js, Java Developer, Computer Engineering, Portfolio">
+    <meta name="author" content="Bhavesh Tayade">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Bhavesh Tayade - Full Stack Developer">
+    <meta property="og:description" content="Computer Engineering student and MERN Stack Developer with expertise in React.js, Node.js, and Java development.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <button onclick="scrollToSection('home')" class="brand-btn">BT</button>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu" id="nav-menu">
+                <button onclick="scrollToSection('home')" class="nav-link" data-section="home">Home</button>
+                <button onclick="scrollToSection('about')" class="nav-link" data-section="about">About</button>
+                <button onclick="scrollToSection('projects')" class="nav-link" data-section="projects">Projects</button>
+                <button onclick="scrollToSection('achievements')" class="nav-link" data-section="achievements">Achievements</button>
+                <button onclick="scrollToSection('contact')" class="nav-link" data-section="contact">Contact</button>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">Bhavesh Tayade</span>
+                </h1>
+            </div>
+            
+            <div class="hero-subtitle">
+                <p>Full Stack Developer & Computer Engineering Student</p>
+            </div>
+            
+            <div class="hero-buttons">
+                <button onclick="scrollToSection('projects')" class="btn btn-primary">View My Work</button>
+                <button onclick="scrollToSection('contact')" class="btn btn-secondary">Get In Touch</button>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <button onclick="scrollToSection('about')" class="scroll-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-info">
+                    <div class="info-card">
+                        <h3>Education</h3>
+                        <p>Currently pursuing a <strong>Bachelor's in Computer Engineering</strong>, building a strong foundation in software development, algorithms, and system design.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Experience</h3>
+                        <p><strong>MERN Stack Developer Intern</strong> at Humming Byte Pvt Ltd, where I developed full-stack applications and collaborated with experienced developers on real-world projects.</p>
+                    </div>
+                </div>
+                
+                <div class="about-skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">⚛️</div>
+                            <h4>React.js</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🟢</div>
+                            <h4>Node.js</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🍃</div>
+                            <h4>MongoDB</h4>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">☕</div>
+                            <h4>Java</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-card">
+                        <h4>MERN Stack Expertise</h4>
+                        <p>Specialized in building modern web applications using MongoDB, Express.js, React.js, and Node.js with a focus on scalable architecture and user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">A showcase of my development work, featuring full-stack applications and innovative solutions.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Transportation delivery platform">
+                        <div class="project-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Transportation Delivery Platform</h3>
+                        <p>A comprehensive logistics platform built with MERN stack, featuring real-time tracking, route optimization, and delivery management systems.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">🔗 Live Demo</a>
+                            <a href="https://github.com/bhaveshtayade" target="_blank" class="project-link">📂 GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="E-commerce platform">
+                        <div class="project-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-featured e-commerce solution with user authentication, payment integration, inventory management, and responsive design for optimal shopping experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">🔗 Live Demo</a>
+                            <a href="https://github.com/bhaveshtayade" target="_blank" class="project-link">📂 GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Portfolio website">
+                        <div class="project-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio showcasing projects and skills with modern animations, dark theme design, and fully responsive layout built with React and Tailwind CSS.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Framer</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">🔗 Live Demo</a>
+                            <a href="https://github.com/bhaveshtayade" target="_blank" class="project-link">📂 GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Key milestones in my development journey</p>
+            </div>
+            
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <div class="achievement-marker"></div>
+                    <div class="achievement-content">
+                        <h3>Internship Selection</h3>
+                        <p>Selected for MERN Stack Developer internship at <strong>Humming Byte Pvt Ltd</strong>, working on production-level applications and gaining hands-on experience in full-stack development.</p>
+                        <div class="achievement-year">2024</div>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-marker"></div>
+                    <div class="achievement-content">
+                        <h3>Hackathon Participation</h3>
+                        <p>Participated in multiple hackathons, developing innovative solutions under time constraints and collaborating with diverse teams to build functional prototypes.</p>
+                        <div class="achievement-year">2023-2024</div>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-marker"></div>
+                    <div class="achievement-content">
+                        <h3>Technical Certifications</h3>
+                        <p>Completed certifications in <strong>Node.js, MERN Stack Development, and Java Programming</strong>, demonstrating proficiency in full-stack technologies and modern development practices.</p>
+                        <div class="achievement-year">2023-2024</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Ready to collaborate on exciting projects or discuss opportunities? Let's build something amazing together.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:bhaveshtayade2004@gmail.com">bhaveshtayade2004@gmail.com</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3>Professional</h3>
+                    <p>Open for internships, freelance projects, and full-time opportunities in full-stack development.</p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/bhaveshtayade" target="_blank" class="social-link">
+                    <div class="social-icon">🐙</div>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/bhavesh-tayade-a02724283/" target="_blank" class="social-link">
+                    <div class="social-icon">💼</div>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/bhavesh.tayade.1/" target="_blank" class="social-link">
+                    <div class="social-icon">📷</div>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
